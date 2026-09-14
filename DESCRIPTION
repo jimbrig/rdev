@@ -18,8 +18,14 @@ Imports:
     ps,
     rlang,
     stringr,
+    sys,
     tibble,
     utils
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: 
+    knitr
 Config/rcmdcheck/ignore-inconsequential-notes: true
 Config/roxygen2/markdown: TRUE
 Config/roxygen2/version: 8.1.0
@@ -27,7 +33,3 @@ Config/testthat/edition: 3
 Encoding: UTF-8
 Language: en-US
 Roxygen: list(markdown = TRUE)
-Suggests: 
-    knitr,
-    rmarkdown
-VignetteBuilder: knitr

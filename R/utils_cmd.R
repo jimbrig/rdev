@@ -4,7 +4,7 @@
 #' @name utils_cmd
 #'
 #' @description
-#' Utilities for running system commands and tools like `git`, `docker`, `az`, and `terraform`.
+#' Utilities for running system commands and tools like `git`, `docker`, etc.
 #'
 #' These functions leverage [sys::exec_internal()] to run commands and capture their output.
 #'
@@ -12,8 +12,6 @@
 #' - `git()`: Run a `git` command.
 #' - `gh()`: Run a GitHub CLI (`gh`) command.
 #' - `docker()`: Run a `docker` command.
-#' - `az()`: Run an Azure CLI (`az`) command.
-#' - `terraform()`: Run a Terraform command.
 #'
 #' @param cmd The command to run.
 #' @param ... Additional arguments to pass to the command.
@@ -231,103 +229,3 @@ npx <- function(cmd, ..., .timeout = 60, .echo = TRUE) {
 
 }
 
-# azure cli -------------------------------------------------------------------------------------------------------
-
-#' @rdname utils_cmd
-#' @export
-az <- function(cmd, ..., .timeout = 60, .echo = TRUE) {
-
-  az_path <- Sys.which("az")
-  if (az_path == "") cli::cli_abort("{.code az} is not installed or not found in the system {.envvar PATH}.")
-
-  args <- c(cmd, ...)
-
-  res <- sys::exec_internal(
-    cmd = az_path,
-    args = args,
-    timeout = .timeout,
-    error = FALSE
-  )
-
-  if (res$status != 0) {
-    cli::cli_abort(
-      c(
-        "Failed to run {.code az {cmd}} command (exit code: {res$status}).",
-        "x" = sys::as_text(res$stderr)
-      )
-    )
-  }
-
-  output <- sys::as_text(res$stdout)
-  if (.echo) cat(output)
-  invisible(
-    list(
-      stdout = output,
-      stderr = sys::as_text(res$stderr),
-      status = res$status
-    )
-  )
-
-}
-
-# terraform -------------------------------------------------------------------------------------------------------
-
-#' @rdname utils_cmd
-#' @export
-terraform <- function(cmd, ..., .timeout = 60, .echo = TRUE) {
-
-  terraform_path <- Sys.which("terraform")
-  if (terraform_path == "") {
-    cli::cli_abort("{.code terraform} is not installed or not found in the system {.envvar PATH}.")
-  }
-
-  args <- c(cmd, ...)
-
-  res <- sys::exec_internal(
-    cmd = terraform_path,
-    args = args,
-    timeout = .timeout,
-    error = FALSE
-  )
-
-  if (res$status != 0) {
-    cli::cli_abort(
-      c(
-        "Failed to run {.code terraform {cmd}} command (exit code: {res$status}).",
-        "x" = sys::as_text(res$stderr)
-      )
-    )
-  }
-
-  output <- sys::as_text(res$stdout)
-  if (.echo) cat(output)
-  invisible(output)
-
-}
-
-terraform_init <- function(
-    path = ".",
-    backend = c("remote", "local"),
-    force = FALSE,
-    ...
-) {
-
-  backend <- rlang::arg_match(backend)
-
-  args <- c("init", "--no-color", "--input=false")
-
-  if (backend == "remote") {
-    args <- c(args, "--backend=true")
-  } else if (backend == "local") {
-    args <- c(args, "--backend=false")
-  }
-
-  if (force) {
-    args <- c(args, "-reconfigure")
-  }
-
-  args <- c(args, path, ...)
-
-  terraform("init", args, .echo = TRUE)
-
-}

@@ -13,6 +13,7 @@ modern R development and enhance the overall developer experience.
 Useful links:
 \itemize{
   \item \url{https://github.com/jimbrig/rdev}
+  \item \url{http://docs.jimbrig.com/rdev/}
   \item Report bugs at \url{https://github.com/jimbrig/rdev/issues}
 }
 
