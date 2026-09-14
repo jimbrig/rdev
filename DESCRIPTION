@@ -1,0 +1,19 @@
+Package: rdev
+Title: R Developer Tooling
+Version: 0.0.0.9000
+Authors@R: 
+    person("Jimmy", "Briggs", , "jimmy.briggs@jimbrig.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7489-8787"))
+Description: Provides various R and R-adjacent development related
+    automation functions to streamline opinionated R development tasks.
+License: MIT + file LICENSE
+Depends: 
+    R (>= 4.2.0)
+Imports: 
+    rlang (>= 1.1.0)
+Config/rcmdcheck/ignore-inconsequential-notes: true
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.1.0
