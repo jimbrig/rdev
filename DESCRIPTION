@@ -7,15 +7,27 @@ Authors@R:
 Description: Provides various R and R-adjacent development related
     automation functions to streamline opinionated R development tasks.
 License: MIT + file LICENSE
+URL: https://github.com/jimbrig/rdev, http://docs.jimbrig.com/rdev/
+BugReports: https://github.com/jimbrig/rdev/issues
 Depends: 
     R (>= 4.2.0)
 Imports: 
-    rlang (>= 1.1.0)
+    cli,
+    crayon,
+    dplyr,
+    ps,
+    rlang,
+    stringr,
+    tibble,
+    utils
 Config/rcmdcheck/ignore-inconsequential-notes: true
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.1.0
 Config/testthat/edition: 3
 Encoding: UTF-8
 Language: en-US
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 8.1.0
-URL: https://github.com/jimbrig/rdev
-BugReports: https://github.com/jimbrig/rdev/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

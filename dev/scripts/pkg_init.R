@@ -18,7 +18,10 @@ desc::desc_set_dep("R", type = "Depends", version = ">= 4.2.0")
 desc::desc_set_dep("rlang", type = "Imports", version = ">= 1.1.0")
 desc::desc_set("Config/rcmdcheck/ignore-inconsequential-notes", "true")
 desc::desc_set("Config/testthat/edition", "3")
+desc::desc_set("Config/roxygen2/markdown", "TRUE")
+desc::desc_set("Config/roxygen2/version", utils::packageVersion("roxygen2"))
 desc::desc_normalize()
+
 
 usethis::use_mit_license(copyright_holder = "Jimmy Briggs <jimmy.briggs@jimbrig.com>")
 usethis::use_git()
@@ -26,3 +29,5 @@ usethis::use_github()
 usethis::use_github_links()
 usethis::use_directory(".github", ignore = TRUE)
 usethis::use_git_ignore(c("*.html"), ".github")
+
+attachment::att_amend_desc(use.config = TRUE, update.config = TRUE, path.c = "dev/attachment.config.yml")
