@@ -2,6 +2,15 @@
 
 ## All functions
 
+- [`check_inherits()`](http://docs.jimbrig.com/rdev/reference/check_inherits.md)
+  [`check_inherits2()`](http://docs.jimbrig.com/rdev/reference/check_inherits.md)
+  [`check_inherits_any()`](http://docs.jimbrig.com/rdev/reference/check_inherits.md)
+  [`check_inherits_all()`](http://docs.jimbrig.com/rdev/reference/check_inherits.md)
+  : Class Inheritance Checks
+
+- [`checks`](http://docs.jimbrig.com/rdev/reference/checks.md) : Check
+  Functions
+
 - [`normalize_path()`](http://docs.jimbrig.com/rdev/reference/normalize_path.md)
   : Normalize Path
 
@@ -44,3 +53,10 @@
   [`sys_where()`](http://docs.jimbrig.com/rdev/reference/sys_which.md) :
 
   `sys_which` - System `which`
+
+- [`cmd()`](http://docs.jimbrig.com/rdev/reference/utils_cmd.md)
+  [`git()`](http://docs.jimbrig.com/rdev/reference/utils_cmd.md)
+  [`gh()`](http://docs.jimbrig.com/rdev/reference/utils_cmd.md)
+  [`docker()`](http://docs.jimbrig.com/rdev/reference/utils_cmd.md)
+  [`npx()`](http://docs.jimbrig.com/rdev/reference/utils_cmd.md) :
+  Command Utilities

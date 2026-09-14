@@ -7,6 +7,8 @@
 <url><loc>http://docs.jimbrig.com/rdev/articles/rdev.html</loc></url>
 <url><loc>http://docs.jimbrig.com/rdev/authors.html</loc></url>
 <url><loc>http://docs.jimbrig.com/rdev/index.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/reference/check_inherits.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/reference/checks.html</loc></url>
 <url><loc>http://docs.jimbrig.com/rdev/reference/index.html</loc></url>
 <url><loc>http://docs.jimbrig.com/rdev/reference/normalize_path.html</loc></url>
 <url><loc>http://docs.jimbrig.com/rdev/reference/rdev-package.html</loc></url>
@@ -18,5 +20,6 @@
 <url><loc>http://docs.jimbrig.com/rdev/reference/sys_pid.html</loc></url>
 <url><loc>http://docs.jimbrig.com/rdev/reference/sys_platform.html</loc></url>
 <url><loc>http://docs.jimbrig.com/rdev/reference/sys_which.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/reference/utils_cmd.html</loc></url>
 </urlset>
 

@@ -10,6 +10,8 @@ Useful links:
 
 - <https://github.com/jimbrig/rdev>
 
+- <http://docs.jimbrig.com/rdev/>
+
 - Report bugs at <https://github.com/jimbrig/rdev/issues>
 
 ## Author
