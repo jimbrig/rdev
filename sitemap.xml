@@ -1,0 +1,22 @@
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>http://docs.jimbrig.com/rdev/404.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/CHANGELOG.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/LICENSE-text.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/LICENSE.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/articles/index.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/articles/rdev.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/authors.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/index.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/reference/index.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/reference/normalize_path.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/reference/rdev-package.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/reference/read_renviron.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/reference/sys_error_code.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/reference/sys_info.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/reference/sys_os.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/reference/sys_path.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/reference/sys_pid.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/reference/sys_platform.html</loc></url>
+<url><loc>http://docs.jimbrig.com/rdev/reference/sys_which.html</loc></url>
+</urlset>
+

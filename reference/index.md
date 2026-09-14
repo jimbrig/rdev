@@ -1,0 +1,46 @@
+# Package index
+
+## All functions
+
+- [`normalize_path()`](http://docs.jimbrig.com/rdev/reference/normalize_path.md)
+  : Normalize Path
+
+- [`rdev-package`](http://docs.jimbrig.com/rdev/reference/rdev-package.md)
+  [`rdev`](http://docs.jimbrig.com/rdev/reference/rdev-package.md) :
+
+  `rdev` Package
+
+- [`read_renviron()`](http://docs.jimbrig.com/rdev/reference/read_renviron.md)
+  :
+
+  Read `.Renviron` File
+
+- [`sys_error_code()`](http://docs.jimbrig.com/rdev/reference/sys_error_code.md)
+  :
+
+  `sys_error_code` - System Error Codes
+
+- [`sys_info()`](http://docs.jimbrig.com/rdev/reference/sys_info.md) :
+  System Information
+
+- [`sys_os()`](http://docs.jimbrig.com/rdev/reference/sys_os.md) :
+
+  `sys_os` - System OS Name
+
+- [`sys_path()`](http://docs.jimbrig.com/rdev/reference/sys_path.md) :
+
+  `sys_path` - System PATH
+
+- [`sys_pid()`](http://docs.jimbrig.com/rdev/reference/sys_pid.md) :
+
+  `sys_pid` - System Process ID
+
+- [`sys_platform()`](http://docs.jimbrig.com/rdev/reference/sys_platform.md)
+  :
+
+  `sys_platform` - System Platform
+
+- [`sys_which()`](http://docs.jimbrig.com/rdev/reference/sys_which.md)
+  [`sys_where()`](http://docs.jimbrig.com/rdev/reference/sys_which.md) :
+
+  `sys_which` - System `which`
