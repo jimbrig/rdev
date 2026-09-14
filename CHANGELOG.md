@@ -6,6 +6,11 @@
 
 ## [Unreleased]
 
+## Features
+
+- **utils:** Refine command utilities and add inheritance checks ([20910f6](https://github.com/jimbrig/rdev/commit/20910f6c2a34f2aaebd5fb14848c9a9fa0903cb1))  - (Jimmy Briggs)
+  - **BREAKING CHANGE:** The `az()` and `terraform()` utility functions have been removed. Existing code relying on `rdev::az()` or `rdev::terraform()` will need to be updated.
+
 ## Setup
 
 - Configure package development environment and add core utilities ([baacbfe](https://github.com/jimbrig/rdev/commit/baacbfee55bf116f2e1d5c1369fd8dee99253731))  - (Jimmy Briggs)
